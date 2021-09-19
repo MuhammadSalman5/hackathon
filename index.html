@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="stylemain.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="form-container">
+            
+            <!-- <h1 class="mainhead">COAL MINE CONTROL AND MONITORING SYSTEM USING IOT</h1> -->
+            <!-- <h2 style="text-align: center; color:black ;">Login Form</h2> -->
+            <fieldset class="control" > 
+                
+                <div >
+                    <label class="label" for="name">Email Address</label>
+                    <input  type="text" class="login_email" id="login_email" placeholder="ENTER YOUR EMAIL"  name="u-name" value="" >
+                <!-- </div> -->
+                <!-- <div class="control"> -->
+                    <label class="label" for="psw">Password</label>
+                    <input  type="password" class="login_password" id="login_password" placeholder="ENTER YOUR PASSWORD" name="u-pass" value="" required>
+                <!-- </div> -->
+                <!-- <div class="control"> -->
+                    <input type="button" id="login_btn" class="btn" onclick="login()"  name="" value="Sign In">
+                    <input type="button" id="login_btn" class="btn" onclick="signup()"  name="" value="Sign Up">
+                </div>
+            </fieldset>
+            
+        </div>
+    </section>
+</body>
+<script type="module">
+const firebaseConfig = {
+    apiKey: "AIzaSyBzy0v3jf2AM-wS-UJ8zyYx_CmWpXOWo7Y",
+    authDomain: "hakathaton.firebaseapp.com",
+    projectId: "hakathaton",
+    storageBucket: "hakathaton.appspot.com",
+    messagingSenderId: "752417298681",
+    appId: "1:752417298681:web:76b2bf45a130616770aa28",
+    measurementId: "G-SZ7YS5QW7Z"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="appmain.js"></script>
+</html>
